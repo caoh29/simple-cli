@@ -8,9 +8,21 @@ To install:
 npm install
 ```
 
+To build:
+
+```
+npm run build
+```
+
 To run it:
 
 - Using Node.js > 22.6.0
+
   ```
   node --experimental-strip-types ./src/app.ts -b ANY_NUMBER
+  ```
+
+- Using lower version of Node.js
+  ```
+  node ./dist/app.js
   ```

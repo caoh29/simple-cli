@@ -31,7 +31,7 @@ export const argv = yargs(process.argv)
     default: 'outputs',
     describe: 'File destination'
   })
-  .check((argv, options) => {
+  .check((argv) => {
     if (argv.b < 1) throw new Error('base must be greater than 0');
 
     return true;
